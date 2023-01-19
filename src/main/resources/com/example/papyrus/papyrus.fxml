@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papyrus.GUI.PapyrusController">
+   <children>
+      <TextField fx:id="search_text" layoutX="162.0" layoutY="47.0" prefHeight="24.0" prefWidth="277.0" />
+      <Label layoutX="33.0" layoutY="51.0" text="Code fournisseur" />
+      <Button fx:id="search_button" layoutX="465.0" layoutY="47.0" mnemonicParsing="false" onAction="#search_click" prefHeight="24.0" prefWidth="108.0" text="Recherche" />
+      <Pane layoutX="76.0" layoutY="121.0" prefHeight="243.0" prefWidth="449.0" style="-fx-border-color: grey;">
+         <children>
+            <Label layoutX="79.0" layoutY="57.0" text="Nom" />
+            <Label layoutX="69.0" layoutY="97.0" text="Adresse" />
+            <Label layoutX="66.0" layoutY="135.0" text="CP / Ville" />
+            <Label layoutX="69.0" layoutY="173.0" text="Contact" />
+            <Label fx:id="label_nom" layoutX="138.0" layoutY="53.0" prefHeight="24.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+            <Label fx:id="label_adresse" layoutX="139.0" layoutY="93.0" prefHeight="24.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+            <Label fx:id="label_ville" layoutX="139.0" layoutY="131.0" prefHeight="24.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+            <Label fx:id="label_cp" layoutX="231.0" layoutY="131.0" prefHeight="24.0" prefWidth="153.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+            <Label fx:id="label_contact" layoutX="139.0" layoutY="169.0" prefHeight="24.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: grey;" />
+         </children>
+      </Pane>
+      <Label layoutX="76.0" layoutY="105.0" text="Information fournisseur" />
+      <Label fx:id="label_erreur" layoutX="162.0" layoutY="23.0" prefHeight="16.0" prefWidth="410.0" />
+   </children>
+</AnchorPane>
