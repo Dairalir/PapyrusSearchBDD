@@ -26,5 +26,6 @@
       </Pane>
       <Label layoutX="76.0" layoutY="105.0" text="Information fournisseur" />
       <Label fx:id="label_erreur" layoutX="162.0" layoutY="23.0" prefHeight="16.0" prefWidth="410.0" />
+      <Button layoutX="8.0" layoutY="364.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
    </children>
 </AnchorPane>

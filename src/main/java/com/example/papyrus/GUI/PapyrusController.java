@@ -1,11 +1,17 @@
 package com.example.papyrus.GUI;
 
+import com.example.papyrus.App;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.*;
 
 public class PapyrusController {
@@ -62,8 +68,13 @@ public class PapyrusController {
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Erreur de connexion");
+            alert.setContentText("La connection s'est mal passée");
             alert.showAndWait();
         }
 
+    }
+
+    public void retour(ActionEvent actionEvent) throws IOException {
+        App.changeFxml("menu");
     }
 }
