@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.papyrus.GUI.MenuController">
+   <children>
+      <Button layoutX="79.0" layoutY="188.0" mnemonicParsing="false" onAction="#openExo1" text="Exo 1" />
+      <Button layoutX="269.0" layoutY="188.0" mnemonicParsing="false" onAction="#openExo2" text="Exo 2" />
+      <Button layoutX="440.0" layoutY="188.0" mnemonicParsing="false" onAction="#openExo3" text="Exo 3" />
+   </children>
+</AnchorPane>
